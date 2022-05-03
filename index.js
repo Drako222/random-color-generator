@@ -3,8 +3,8 @@ import randomColor from 'randomcolor';
 
 let color;
 
-let lum = process.argv[3];
-let hu = process.argv[2];
+const lum = process.argv[3];
+const hu = process.argv[2];
 
 if (process.argv.length < 3) {
   color = randomColor();
@@ -27,9 +27,7 @@ const textblock = `###############################
 
 console.log(chalk.hex(color)(textblock));
 
-//console.log(chalk.hex(color)(textblock);
-
-/*import emoji from 'node-emoji';
+/* import emoji from 'node-emoji';
 
 // const index = Math.floor(Math.random()) * 10 * emojis.length;
 
